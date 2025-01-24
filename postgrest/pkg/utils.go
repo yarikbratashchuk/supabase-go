@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-const reservedChars = ",.:()"
+const reservedChars = ",()"
 
 func SanitizeParam(param string) string {
 	if strings.ContainsAny(param, reservedChars) {
